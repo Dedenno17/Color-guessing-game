@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;800&family=Readex+Pro:wght@200;600&family=Roboto:wght@100;500;700&family=Ubuntu:wght@300;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.rgb-value-container{
+    width: 100%;
+    height: 30%;
+    background-color: #38A3A5;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+
+.rgb-value-container h1:first-child{
+    margin-bottom: 20px;
+}
+
+.rgb-value-container .rgb-value{
+    font-size: 4em;
+}
+
+.controls-games-bar{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #22577A;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+
+.controls-games-bar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    list-style: none;
+}
+
+.controls-games-bar ul li{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls-games-bar ul li:first-child{
+    cursor: pointer;
+}
+
+.controls-games-bar ul li:first-child:hover{
+    background-color: #38A3A5;
+}
+
+.controls-games-bar ul li:nth-child(2){
+    font-size: 1.7em;
+    color: #444;
+    height: 90%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.controls-games-bar ul li:last-child{
+    justify-content: space-evenly;
+}
+
+.controls-games-bar ul li:last-child span{
+    cursor: pointer;
+    width: 40%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls-games-bar ul li:last-child span:hover{
+    background-color: #38A3A5;
+  
+}
+
+.colors-container{
+    width: 100%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr );
+    gap: 40px;
+    padding: 20px 80px;
+    background-color: #C7F9CC;
+}
+
+.colors-container .color{
+    background-color: red;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.colors-container .color:active{
+    transform: scale(.98);
+}
